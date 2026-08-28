@@ -19,6 +19,7 @@ html {
   --hero-bg-color: linear-gradient(45deg, lightgrey, grey);
 
   --text-color: black;
+  --muted-text-color: grey;
   --link-color: blue;
 
   /* --- Font Sizes --- */
@@ -190,6 +191,10 @@ footer {
   display: flex;
   flex-direction: column;
   gap: var(--gap-xs);
+}
+
+.card-details p {
+  color: var(--muted-text-color);
 }
 
 .project-link {
