@@ -160,7 +160,7 @@ footer {
   width: 120px;
   text-align: center;
   display: block;
-  padding: 1rem 0;
+  padding: var(--gap-sm) 0;
   text-decoration: none;
 
   &:hover {
