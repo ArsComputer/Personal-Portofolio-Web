@@ -29,6 +29,8 @@ html {
   --muted-text-color: grey;
   --link-color: blue;
 
+  --shadow-color: rgba(0, 0, 0, 0.4);
+
   /* --- Font Sizes --- */
   --fs-sm: clamp(1rem, 3vw, 1.6rem);
   --fs-md: clamp(1.6rem, 5vw, 2rem);
@@ -188,6 +190,7 @@ footer {
   padding: var(--gap-sm);
   padding-bottom: var(--gap-lg);
   border-radius: var(--radius-sm);
+  box-shadow: 0 2px 5px var(--shadow-color);
 }
 
 .thumb {
