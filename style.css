@@ -17,8 +17,13 @@ html {
 
   --hero-bg-color: linear-gradient(45deg, lightgrey, grey);
 
-  /* --- Font Size --- */
+  /* --- Font Sizes --- */
   --fs-sm: 1.6rem;
+
+  /* --- Gap Sizes --- */
+  --gap-sm: 1.6rem;
+  --gap-md: 2.4rem;
+  --gap-lg: 3.2rem;
 }
 
 
@@ -26,6 +31,19 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: var(--fs-sm);
+  line-height: 1.6;
+}
+
+section {
+  padding: var(--gap-lg) var(--gap-sm);
+}
+
+footer {
+  padding: 0 var(--gap-sm);
+}
+
+img {
+  width: 100%;
 }
 
 
@@ -46,7 +64,6 @@ header {
 }
 
 .nav-list {
-  list-style: none;
   display: flex;
   align-items: center;
 }
@@ -68,6 +85,11 @@ header {
   font-size: var(--fs-sm);
 }
 
+/* --- Footer --- */
+.footer-container {
+  padding: var(--gap-lg) 0;
+}
+
 
 /* === ITEM === */
 .nav-link {
@@ -83,4 +105,32 @@ header {
   }
 }
 
+.section-title {
+  margin: 0 auto;
+  text-align: center;
+  /* background: grey; */
+}
+
+.copyright {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
 /* === UTILITY === */
+.paragraph {
+  margin-bottom: var(--gap-sm)
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+/* .margin-bottom {
+  margin-bottom: var(--gap-lg);
+} */

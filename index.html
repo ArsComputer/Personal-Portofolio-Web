@@ -9,7 +9,7 @@
 <body>
   <header>
     <nav class="navbar">
-      <ul class="nav-list">
+      <ul class="nav-list list-style-none">
         <li><a href="#home" class="nav-link">link 1</a></li>
         <li><a href="#aboutMe" class="nav-link">link 2</a></li>
         <li><a href="#project" class="nav-link">link 3</a></li>
@@ -27,53 +27,57 @@
     </section>
 
     <section class="about-me" id="aboutMe">
-      <div class="section-title">
-        <h2>About Me</h2>
-      </div>
-
-      <div class="content">
-        <p>
-          Saya Rasya Alfahri, adalah seorang mahasiswa Informatika biasa yang sedang mendalami tentang pengembangan web. Saya mulai tertarik dengan pengembangan web sejak saya masih SMA, namun saya baru bisa mempelajarinya dengan serius ketika sudah lulus karena keterbatasan perangkat yang saya gunakan.
-        </p>
-
-        <p>Saat ini saya sudah mempelajari tentang <b>HTML</b>, <b>CSS</b>, dan <b>Javascript</b>. Pada HTML saya sudah mempelajari hal tentang <i>HTML dasar</i>, sampai ke <i>tag semantik HTML</i>. Di CSS saya sudah mempelajari dan menguasai tentang <i>CSS dasar</i>, <i>Flexbox</i>, sampai <i>Grid</i>. Pada Javascript juga saya sudah mempelajari tentang <i>Pemrograman Dasar Javascript</i>, <i>Manipulasi DOM</i>, sampai ke <i>Asynchronous Javascript</i>.</p>
-
-        <p>
-          Web <b>Personal Portofolio</b> ini akan saya gunakan untuk mempublikasi project yang pernah saya buat dan saya deploy/publish di <b>GitHub</b>.
-        </p>
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+        </div>
+  
+        <div class="content">
+          <p class="paragraph">
+            Saya Rasya Alfahri, adalah seorang mahasiswa Informatika biasa yang sedang mendalami tentang pengembangan web. Saya mulai tertarik dengan dunia pemrograman dan pengembangan web sejak saya masih SMA, namun saya baru bisa mempelajarinya dengan serius ketika sudah lulus karena keterbatasan perangkat yang saya gunakan.
+          </p>
+  
+          <p class="paragraph">Saat ini saya sudah mempelajari tentang <b>HTML</b>, <b>CSS</b>, dan <b>Javascript</b>. Pada HTML saya sudah mempelajari hal tentang <i>HTML dasar</i>, sampai ke <i>tag semantik HTML</i>. Di CSS saya sudah mempelajari dan menguasai tentang <i>CSS dasar</i>, <i>Flexbox</i>, sampai <i>Grid</i>. Pada Javascript juga saya sudah mempelajari tentang <i>Pemrograman Dasar Javascript</i>, <i>Manipulasi DOM</i>, sampai ke <i>Asynchronous Javascript</i> dan <i>Fetch API</i>.</p>
+  
+          <p class="paragraph">
+            Web <b>Personal Portofolio</b> ini akan saya gunakan untuk mempublikasi project yang pernah saya buat dan saya deploy/publish di <b>GitHub</b>.
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="project" id="project">
-      <div class="section-title">
-        <h2>Project List</h2>
-      </div>
-
-      <div class="card-container">
-        <div class="card">
-          <div class="thumb">
-            <img src="" alt="">
-          </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>Project List</h2>
+        </div>
   
-          <div class="content">
-            <div class="content-title">
-              <h3>Judul</h3>
+        <div class="card-container">
+          <div class="card">
+            <div class="thumb">
+              <img src="" alt="">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nostrum.</p>
-
-            <a href="#" class="project-link">
-              Buka Project
-              <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+    
+            <div class="content">
+              <div class="content-title">
+                <h3>Judul</h3>
               </div>
-            </a>
-
-            <a href="#" class="project-link">
-              Buka Repository
-              <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
-              </div>
-            </a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nostrum.</p>
+  
+              <a href="#" class="project-link">
+                Buka Project
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+                </div>
+              </a>
+  
+              <a href="#" class="project-link">
+                Buka Repository
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -81,21 +85,23 @@
   </main>
 
   <footer>
-    <nav class="footer-navbar">
-      <div class="footer-links">
-        <div class="footer-title">
-          <h3>Kunjungi Juga</h3>
+    <div class="container footer-container">
+      <nav class="footer-navbar">
+        <div class="footer-links">
+          <div class="footer-title">
+            <h3>Kunjungi Juga</h3>
+          </div>
+    
+          <ul class="footer-links list-style-none">
+            <li>
+              <a href="https://github.com/ArsComputer" target="_blank" class="footer-link">
+                GitHub
+              </a>
+            </li>
+          </ul>
         </div>
-  
-        <ul class="footer-links">
-          <li>
-            <a href="https://github.com/ArsComputer" target="_blank" class="footer-link">
-              GitHub
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <div class="copyright">
       <p>&copy;2026 Copyright RasyaAlfahri as ArsComputer</p>
