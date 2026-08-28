@@ -14,16 +14,24 @@ html {
 :root {
   /* --- Color --- */
   --primary-color: white;
+  --secondary-color: lightblue;
 
   --hero-bg-color: linear-gradient(45deg, lightgrey, grey);
+
+  --text-color: black;
+  --link-color: blue;
 
   /* --- Font Sizes --- */
   --fs-sm: 1.6rem;
 
   /* --- Gap Sizes --- */
+  --gap-xs: 0.8rem;
   --gap-sm: 1.6rem;
   --gap-md: 2.4rem;
   --gap-lg: 3.2rem;
+
+  /* --- Radius --- */
+  --radius-sm: 1.6rem;
 }
 
 
@@ -32,6 +40,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: var(--fs-sm);
   line-height: 1.6;
+  color: var(--text-color);
 }
 
 section {
@@ -44,6 +53,22 @@ footer {
 
 img {
   width: 100%;
+  pointer-events: none;
+  display: block;
+}
+
+svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a svg {
+  fill: var(--link-color);
 }
 
 
@@ -85,6 +110,13 @@ header {
   font-size: var(--fs-sm);
 }
 
+/* --- Project Section --- */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap-sm);
+}
+
 /* --- Footer --- */
 .footer-container {
   padding: var(--gap-lg) 0;
@@ -94,7 +126,7 @@ header {
 /* === ITEM === */
 .nav-link {
   /* border: 1px solid black; */
-  width: 10rem;
+  width: 120px;
   text-align: center;
   display: block;
   padding: 1rem 0;
@@ -107,6 +139,7 @@ header {
 
 .section-title {
   margin: 0 auto;
+  margin-bottom: var(--gap-sm);
   text-align: center;
   /* background: grey; */
 }
@@ -114,6 +147,41 @@ header {
 .copyright {
   margin: 0 auto;
   text-align: center;
+}
+
+
+/* === CARD COMPONENT === */
+/* --- Project Card --- */
+.card {
+  background-color: var(--secondary-color);
+  padding: var(--gap-sm);
+  padding-bottom: var(--gap-lg);
+  border-radius: var(--radius-sm);
+}
+
+.thumb {
+  margin-bottom: var(--gap-sm);
+}
+
+.thumb img {
+  border-radius: var(--radius-sm);
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.project-link {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xs);
+}
+
+.open-icon {
+  width: 20px;
 }
 
 
@@ -129,6 +197,10 @@ header {
 
 .list-style-none {
   list-style: none;
+}
+
+.icon {
+  aspect-ratio: 1/1;
 }
 
 /* .margin-bottom {
