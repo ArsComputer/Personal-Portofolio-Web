@@ -22,7 +22,10 @@ html {
   --link-color: blue;
 
   /* --- Font Sizes --- */
-  --fs-sm: 1.6rem;
+  --fs-sm: clamp(1rem, 3vw, 1.6rem);
+  --fs-md: clamp(1.6rem, 5vw, 2rem);
+  --fs-lg: clamp(2.4rem, 5vw, 3.2rem);
+  --fs-xlg: clamp(3rem, 5vw, 4.8rem);
 
   /* --- Gap Sizes --- */
   --gap-xs: 0.8rem;
@@ -41,6 +44,18 @@ body {
   font-size: var(--fs-sm);
   line-height: 1.6;
   color: var(--text-color);
+}
+
+h1 {
+  font-size: var(--fs-xlg);
+}
+
+h2 {
+  font-size: var(--fs-lg);
+}
+
+h3 {
+  font-size: var(--fs-md);
 }
 
 section {
@@ -118,6 +133,10 @@ header {
 }
 
 /* --- Footer --- */
+footer {
+  background-color: var(--primary-color);
+}
+
 .footer-container {
   padding: var(--gap-lg) 0;
 }
@@ -170,7 +189,7 @@ header {
 .card-details {
   display: flex;
   flex-direction: column;
-  gap: var(--gap-sm);
+  gap: var(--gap-xs);
 }
 
 .project-link {
