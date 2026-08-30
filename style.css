@@ -214,6 +214,7 @@ footer {
 
 .copyright {
   margin: 0 auto;
+  padding: var(--gap-sm);
   text-align: center;
 }
 
